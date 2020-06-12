@@ -4,16 +4,16 @@ Various pieces of information about kernel activity are available in the
 All of the numbers reported in this file are aggregates since the system first booted.
 For a quick look, simply cat the file:
 
-> cat /proc/stat
-cpu  2255 34 2290 22625563 6290 127 456
-cpu0 1132 34 1441 11311718 3675 127 438
-cpu1 1123 0 849 11313845 2614 0 18
-intr 114930548 113199788 3 0 5 263 0 4 [... lots more numbers ...]
-ctxt 1990473
-btime 1062191376
-processes 2915
-procs_running 1
-procs_blocked 0
+ > cat /proc/stat
+  cpu  2255 34 2290 22625563 6290 127 456
+  cpu0 1132 34 1441 11311718 3675 127 438
+  cpu1 1123 0 849 11313845 2614 0 18
+  intr 114930548 113199788 3 0 5 263 0 4 [... lots more numbers ...]
+  ctxt 1990473
+  btime 1062191376
+  processes 2915
+  procs_running 1
+  procs_blocked 0
 The very first "cpu" line aggregates the numbers in all of the other "cpuN" lines.
 
 These numbers identify the amount of time the CPU has spent performing different kinds of work. Time units are in USER_HZ or Jiffies (typically hundredths of a second).
