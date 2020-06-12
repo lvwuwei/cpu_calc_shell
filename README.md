@@ -28,7 +28,7 @@ MemFree： ****** KB
 
       在Linux的内核中，有一个全局变量：Jiffies。 Jiffies代表时间。它的单位随硬件平台的不同而不同。系统里定义了一个常数HZ，代表每秒种最小时间间隔的数目。这样jiffies的单位就是1/HZ。Intel平台jiffies的单位是1/100秒，这就是系统所能分辨的最小时间间隔了。每个CPU时间片，Jiffies都要加1。 CPU的利用率就是用执行用户态+系统态的Jiffies除以总的Jifffies来表示。
 
-      在Linux系统中，可以用/proc/stat文件来计算cpu的利用率这个文件包含了所有CPU活动的信息，该文件中的所有值都是从系统启动开始累计到当前时刻。（详细信息可以参考http://www.linuxhowtos.org/System/procstat.htm）
+      在Linux系统中，可以用/proc/stat文件来计算cpu的利用率这个文件包含了所有CPU活动的信息，该文件中的所有值都是从系统启动开始累计到当前时刻。
 
  
 
